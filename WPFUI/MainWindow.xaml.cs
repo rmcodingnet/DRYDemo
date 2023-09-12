@@ -24,5 +24,10 @@ namespace WPFUI
         {
             InitializeComponent();
         }
+
+        private void createEmployeeIdButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
