@@ -19,13 +19,13 @@ namespace WinFormUI
 
         private void generateEmployeeIdButton_Click(object sender, EventArgs e)
         {
-            GenerateEmployeeID();
+            employeeIdText.Text = GenerateEmployeeID(firstNameText.Text, lastNameText.Text);
         }
 
-        private void GenerateEmployeeID()
+        private string GenerateEmployeeID(string firstName, string lastName)
         {
-            string employeeId = $@"{firstNameText.Text.Substring(0, 4)}{lastNameText.Text.Substring(0, 4)}{DateTime.Now.Millisecond}";
-            employeeIdText.Text = employeeId;
+            string employeeId = $@"{firstName.Substring(0, 4)}{lastName.Substring(0, 4)}{DateTime.Now.Millisecond}";
+            return employeeId;
         }
     }
 }
