@@ -13,6 +13,7 @@ namespace DRYDemoLibraryTest
         [Theory]
         [InlineData("Timothy", "Corey", "TimoCore")]
         [InlineData("Tim", "Corey", "TimCore")]
+        [InlineData("Tim", "Co", "TimCo")]
         public void GenerateEmployeeId_ShouldCalculate(string firstName, string lastName, string expectedStart)
         {
             // Arrange
