@@ -21,6 +21,13 @@ namespace DRYDemoLibrary
             if(name.Length > numberOfCharacters)
             {
                 output = name.Substring(0, numberOfCharacters);
+            } 
+            else
+            {
+                do
+                {
+                    output += "X";
+                } while (output.Length < 4);
             }
 
             return output;

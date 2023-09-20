@@ -12,8 +12,8 @@ namespace DRYDemoLibraryTest
     {
         [Theory]
         [InlineData("Timothy", "Corey", "TimoCore")]
-        [InlineData("Tim", "Corey", "TimCore")]
-        [InlineData("Tim", "Co", "TimCo")]
+        [InlineData("Tim", "Corey", "TimXCore")]
+        [InlineData("Tim", "Co", "TimXCoXX")]
         public void GenerateEmployeeId_ShouldCalculate(string firstName, string lastName, string expectedStart)
         {
             // Arrange
